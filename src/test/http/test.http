@@ -1,0 +1,83 @@
+###
+GET http://localhost:8080/api/reading/filter-parameters
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+"CATEGORY":"jeans"
+}
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+  "CATEGORY":"t-shirts"
+}
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+  "COLOR":"ЛИЛОВЫЙ"
+}
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+  "CATEGORY":"jeans",
+  "COLOR":"СИНИЙ"
+}
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+  "CATEGORY":"jeans",
+  "COLOR":"СИНИЙ",
+  "MIN_PRICE":"120"
+}
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+  "CATEGORY":"jeans",
+  "COLOR":"СИНИЙ",
+  "MIN_PRICE":"118"
+}
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+  "CATEGORY":"t-shirts",
+  "MAX_PRICE": "70"
+}
+
+
+###
+POST http://localhost:8080/api/reading/getProducts
+Content-Type: application/json
+
+{
+  "CATEGORY":"t-shirts",
+  "MIN_PRICE": "55",
+  "MAX_PRICE": "60",
+  "COLOR": "БЕЛЫЙ"
+}
